@@ -23,7 +23,7 @@ ADD ./meteor-build.sh /
 ADD ./meteor-run.sh /
 
 
-RUN sh /meteor-build.sh
+# RUN sh /meteor-build.sh
 
 
 # run 

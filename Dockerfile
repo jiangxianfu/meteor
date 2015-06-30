@@ -22,8 +22,11 @@ WORKDIR /app
 ADD ./meteor-build.sh /
 ADD ./meteor-run.sh /
 
+# Get Source Code
+RUN git clone "https://github.com/libreboard/libreboard.git" "/app"
 
-# RUN sh /meteor-build.sh
+# build
+RUN sh /meteor-build.sh
 
 
 # run 
